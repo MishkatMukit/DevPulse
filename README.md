@@ -175,7 +175,7 @@ DevPulse uses JWT (JSON Web Tokens) for authentication:
    
 2. **Login**: Receive a JWT token
    - Token is valid for subsequent authenticated requests
-   - Include token in Authorization header: `Authorization: Bearer <token>`
+   - Include token in Authorization header: `Authorization: <token>`
 
 3. **Token Validation**: All protected routes verify the JWT token
    - Requests without valid tokens are rejected
