@@ -97,6 +97,7 @@ const getAllIssues = async (req: Request, res: Response) => {
         sendResponse(res, {
             statusCode: 200,
             success: true,
+            message:"Issues retrived successfully",
             data: result
         })
 
@@ -139,8 +140,10 @@ const getSingleIssue = async (req: Request, res: Response) => {
             updated_at: issue.updated_at
         }
         sendResponse(res, {
+            
             statusCode: 200,
             success: true,
+            message: "Issue retrived successfully",
             data: result
         })
     } catch (error: any) {
