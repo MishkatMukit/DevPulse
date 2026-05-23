@@ -11,7 +11,7 @@ const requireMaintainer = () => {
         else{
             sendResponse(res, {
             statusCode: 403,
-            success: true,
+            success: false,
             message : "Access forbidden!"
         })}
         }
